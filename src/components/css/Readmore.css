@@ -1,0 +1,29 @@
+.box-one{
+	height: 100vh;
+	width: 100%;
+}
+.box-one .img-count{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.img-count .img-read{
+	height: 40vh;
+	width: 30vh;
+	border: 1px solid rebeccapurple;
+	position: relative;
+	top: 20px;
+	
+}
+.img-read img{
+	height: 100%;
+	width: 100%;
+}
+.table-cont{
+	padding: 30px;
+	width: 100%;
+	display: flex;
+	gap: 20px;
+	position: relative;
+	top: 20px;
+}

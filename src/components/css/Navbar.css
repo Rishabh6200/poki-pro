@@ -1,0 +1,37 @@
+.navbar,
+.p1,
+.p2 {
+    height: 11vh;
+    background-color: var(--bg-color);
+    position: relative;
+    top: -8px;
+}
+
+.p1,
+.p2{
+    z-index: -1;
+}
+.nav-part{
+    width: 40%;
+}
+
+.btn-oo{
+    position: relative;
+    right: 8px;
+}
+
+@media (max-width: 480px) {
+    .nav-part{
+        width: 100%;
+    }
+    .input-group{
+        width: 100%;
+    }
+    .input-group input{
+        height: 25px;
+    }
+    .input-group button{
+        height: 25px;
+        padding: 0;
+    }
+}

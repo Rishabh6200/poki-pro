@@ -1,0 +1,89 @@
+:root {
+    --bg-color: rgba(0, 255, 30, 0.34);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.heading {
+    background-color: var(--bg-color);
+}
+
+.heading h1 {
+    color: yellow;
+    text-shadow: 3px 3px blue;
+    font-size: 4em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.heading h2 {
+    font-family: cursive;
+    font-size: 40px;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 0px solid transparent;
+    border-right: 200px solid transparent;
+    border-bottom: 179px solid #f00;
+    position: absolute;
+    top: 33px;
+}
+
+.triangle2 {
+    border-left: 0px solid transparent;
+    border-right: 200px solid transparent;
+    border-top: 150px solid blue;
+    position: absolute;
+    top: 0px;
+}
+
+.flip {
+    rotate: 180deg;
+    position: absolute;
+    top: 210px;
+    right: 0;
+}
+
+@media (max-width: 480px) {
+    .triangle2 {
+        border-left: 0px solid transparent;
+        border-right: 50px solid transparent;
+        border-top: 50px solid blue;
+    }
+
+    .triangle {
+        border-left: 0px solid transparent;
+        border-right: 50px solid transparent;
+        border-bottom: 50px solid red;
+    }
+
+    .flip {
+        top: 82px;
+    }
+
+    .heading h1 {
+        font-size: 2em;
+    }
+
+    .heading h2 {
+        font-size: 25px;
+    }
+}
+
+
+
+/* ////////////////Footer Code///////////////// */
+
+.footer-hh a{
+    border-radius: 50%;
+    
+}
+.footer-hh a:hover {
+    background: rgb(71, 206, 71);
+    border-radius: 50%;
+}
+
