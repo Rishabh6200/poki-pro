@@ -5,12 +5,14 @@ import './css/Readmore.css'
 import CharDetail from './CharDetail';
 import CharStat from './CharStat';
 import Backbtn from './Backbtn';
+import Loading from './Loading';
 
 const ReadMore = () => {
   const { id } = useParams();
 
   const [pokedata, setPokedata] = useState({});
-  console.log(pokedata.front_default)
+  const [responce, setResponce] = useState({});
+
 
   useEffect(() => {
     let isMounted = true;
@@ -19,7 +21,7 @@ const ReadMore = () => {
 
       const res = await httpComman.get(`/pokemon/${id}`);
       const pokemonData = res.data;
-
+      setResponce(res)
       if (isMounted) {
         setPokedata(pokemonData);
       }
@@ -33,13 +35,24 @@ const ReadMore = () => {
     }
 
   }, []);
+
+
+  if (responce.status !== 200) {
+    return (
+        <>
+            <p> <Loading /> </p>
+        </>
+    )
+}
+
   return (
     <>
-    <Backbtn />
+      <Backbtn />
       <div className="box-one">
         <div className="img-count">
           <div className="img-read">
-            <img src='https://www.shutterstock.com/shutterstock/photos/2313970711/display_1500/stock-vector-cute-and-adorable-vector-illustration-of-creature-characters-in-pokemon-go-2313970711.jpg' alt="" />
+            
+            <img src={`https://unpkg.com/pokeapi-sprites@2.0.2/sprites/pokemon/other/dream-world/${pokedata.id}.svg`} alt="" />
           </div>
         </div>
         <div className="detail">

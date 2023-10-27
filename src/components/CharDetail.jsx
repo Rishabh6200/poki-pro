@@ -2,10 +2,10 @@ import React from 'react'
 import './css/Readmore.css'
 const CharDetail = ({ data }) => {
 
-    const abilities = data.abilities ? data.abilities.map((ability) => ability.ability.name) : [];
+    const abilities = data.abilities ? data.abilities.map((item) => item.ability.name) : [];
     const move = data.moves ? data.moves.map((item) => item.move.name) : [];
     const srMove = move.slice(0, 5);
-    
+
 
     const detail = [
         {
@@ -28,12 +28,12 @@ const CharDetail = ({ data }) => {
             Name: 'Move',
             Data: srMove.join(', '),
         },
-       
-        
+
+
     ]
 
     // console.log(data.stats[0].base_stat)
-    
+
 
     return (
         <>
@@ -46,7 +46,7 @@ const CharDetail = ({ data }) => {
                         </tr>
                     ))}
                 </tbody>
-                
+
             </table>
         </>
     )
