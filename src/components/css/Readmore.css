@@ -25,4 +25,5 @@
 	gap: 20px;
 	position: relative;
 	top: 20px;
+	flex-direction: column;
 }

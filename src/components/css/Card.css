@@ -31,7 +31,7 @@
     top: 20px;
 }
 @media (max-width: 480px) {
-    .container {
+    .containers {
         grid-template-columns: repeat(1, 1fr);
     }
 
