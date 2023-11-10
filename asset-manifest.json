@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/poki-pro/static/css/main.b5eabefd.css",
+    "main.js": "/poki-pro/static/js/main.2d5dbc56.js",
+    "index.html": "/poki-pro/index.html",
+    "main.b5eabefd.css.map": "/poki-pro/static/css/main.b5eabefd.css.map",
+    "main.2d5dbc56.js.map": "/poki-pro/static/js/main.2d5dbc56.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b5eabefd.css",
+    "static/js/main.2d5dbc56.js"
+  ]
+}
