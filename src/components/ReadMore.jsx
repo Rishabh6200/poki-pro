@@ -34,7 +34,7 @@ const ReadMore = () => {
       isMounted = false;
     }
 
-  }, []);
+  }, [id]);
 
 
   if (responce.status !== 200) {

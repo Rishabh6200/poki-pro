@@ -1,7 +1,6 @@
 import React from 'react';
 import './css/Card.css';
 import { useNavigate } from 'react-router-dom';
-import ImgLoader from './ImgLoader';
 
 
 const Card = ({ data }) => {
