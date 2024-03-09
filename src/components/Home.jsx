@@ -5,7 +5,7 @@ import Header from './Header';
 import Navbar from './Navbar';
 import { httpComman } from './api/http-comman';
 import axios from 'axios';
-import Loading from './Loading';
+import { CircularProgress } from '@mui/material';
 
 const Home = () => {
     const [pokedata, setPokedata] = useState([]);
@@ -22,7 +22,7 @@ const Home = () => {
             const pokemonData = await Promise.all(results.map(item => axios.get(item.url)));
             const data = pokemonData.map(response => response.data);
             setResponce(res);
-            
+
             setPokedata(data);
             setNext(res.data.next);
             setPrev(res.data.previous);
@@ -47,7 +47,7 @@ const Home = () => {
         fetchData('/pokemon/');
     }, []);
 
-    
+
 
 
     useEffect(() => {
@@ -65,7 +65,11 @@ const Home = () => {
 
     if (responce.status !== 200) {
         return (
-            <Loading />
+            <div className="loading">
+                <CircularProgress
+                    size={60}
+                />
+            </div>
         );
     }
 

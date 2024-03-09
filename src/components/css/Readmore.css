@@ -1,24 +1,28 @@
-.box-one{
+.box-one {
 	height: 100vh;
 	width: 100%;
 }
-.box-one .img-count{
+
+.box-one .img-count {
 	width: 100%;
 	display: flex;
 	justify-content: center;
 }
-.img-count .img-read{
+
+.img-count .img-read {
 	height: 40vh;
 	width: 30vh;
 	position: relative;
 	top: 20px;
-	
+
 }
-.img-read img{
+
+.img-read img {
 	height: 100%;
 	width: 100%;
 }
-.table-cont{
+
+.table-cont {
 	padding: 30px;
 	width: 100%;
 	display: flex;
@@ -26,4 +30,11 @@
 	position: relative;
 	top: 20px;
 	flex-direction: column;
+}
+
+
+.loading {
+	position: relative;
+	top: 40vh;
+	left: 47%;
 }
