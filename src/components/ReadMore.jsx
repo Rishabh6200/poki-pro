@@ -34,16 +34,16 @@ const ReadMore = () => {
       isMounted = false;
     }
 
-  }, []);
+  }, [id]);
 
 
   if (responce.status !== 200) {
     return (
-        <>
-            <p> <Loading /> </p>
-        </>
+      <>
+        <p> <Loading /> </p>
+      </>
     )
-}
+  }
 
   return (
     <>
@@ -51,7 +51,6 @@ const ReadMore = () => {
       <div className="box-one">
         <div className="img-count">
           <div className="img-read">
-            
             <img src={`https://unpkg.com/pokeapi-sprites@2.0.2/sprites/pokemon/other/dream-world/${pokedata.id}.svg`} alt="" />
           </div>
         </div>
